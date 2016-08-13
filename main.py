@@ -1,7 +1,7 @@
 from elasticsearch import Elasticsearch
 import elasticsearch
 from facebook_database_helper import SimpleFacebookDBHelper
-from facebook_database_helper import NameRelation
+from facebook_database_helper import FLNameData
 from elasticsearch import helpers
 import re
 
