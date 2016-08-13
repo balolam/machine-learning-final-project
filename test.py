@@ -1,9 +1,4 @@
-import re
+s1 = set(list(["a", "b", "c", "a", "f", "d"]))
+s2 = set(list(["a", "d", "k", "y"]))
 
-PATTERN_1 = '(?<=\s)([A-Z]\w+(?:\s[A-Z]\w+?)?\s(?:[A-Z]\w+?)?(?=[\s\.\,\;\:]))'
-PATTERN_2 = '(?<=\s)([A-Z]\w+\s{1}[A-Z]\w+(?=[\s\.\,\;\:]))'
-text = """score=23523
-
-Hello 1234 Maksim Gurov, how are you? What is Your name, Marcusss-sss Paprika Vladimir Ghbhjvghv Gfbfhj. """
-
-print re.findall(PATTERN_2, text)
+print s1.intersection(s2)
