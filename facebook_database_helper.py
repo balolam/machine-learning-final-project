@@ -1,6 +1,4 @@
 # coding=utf-8
-import elasticsearch
-
 from elasticsearch.exceptions import TransportError
 from elasticsearch import helpers
 from copy import deepcopy
@@ -168,7 +166,6 @@ class FacebookDBHelper(object):
                 }})
 
 
-
 class SimpleFacebookDBHelper(object):
     def __init__(self, es, index, post_doc_type, name_relation_doc_type):
         self.helper = FacebookDBHelper(es)
@@ -217,22 +214,16 @@ class SimpleFacebookDBHelper(object):
             fl_name=fl_name)
 
     def delete_all_posts(self):
-        return delete_by_doc_type(es=self.helper.es, index=self.index, type_=self.post_doc_type)
+        return delete_by_doc_type(
+            es=self.helper.es,
+            index=self.index,
+            type_=self.post_doc_type)
 
     def delete_all_name_relations(self):
-        return delete_by_doc_type(es=self.helper.es, index=self.index, type_=self.name_relation_doc_type)
-
-    def find_messages_by_fl_name(self, fl_name):
-        finded_relations = self.get_name_relations_by_fl(fl_name=fl_name)
-        messages = []
-
-        for relation in finded_relations:
-            # noinspection PyTypeChecker
-            post_id = relation['_source']['post_id']
-            message = self.get_post_by_id(post_id)['_source']['message']
-            messages.append(message)
-
-        return messages
+        return delete_by_doc_type(
+            es=self.helper.es,
+            index=self.index,
+            type_=self.name_relation_doc_type)
 
 
 def delete_by_doc_type(es, index, type_):
