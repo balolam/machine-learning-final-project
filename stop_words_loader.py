@@ -13,3 +13,5 @@ class StopWordsLoader(object):
         f.close()
 
         return list(set(words))
+
+from sklearn.feature_extraction import text
