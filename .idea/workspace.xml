@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6820524a-2125-4a62-bd3e-38883c1e8a1b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PostsTools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dict_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebook_database_helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main_test.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/name_regex_helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nltk_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/save_facebook_posts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stop_words_loader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/use_cached_facebook_posts.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/main-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/main-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.ipynb" afterPath="$PROJECT_DIR$/main.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final.iws" />
     <ignored path=".idea/workspace.xml" />
